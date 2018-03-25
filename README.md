@@ -16,3 +16,12 @@ generalize model. This model will only classify between normal and abnormal
 heartbeats. From the knowledge learned from this model a more specialized model
 will be trained to classify between normal, murmur, extra heart sound and
 artifact heartbeats.
+
+---
+
+This project will consist of several notebooks
+
+**WB1-explore.ipynb**
+
+* This notebook contains code to visualize audio files
+* Explores the Physionet and Kaggle datasets
