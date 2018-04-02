@@ -1,3 +1,5 @@
+This project uses python 2.7
+
 The aim of this project is to classify heartbeats into four categories: normal,
 murmur, extra heart sound and artifact.
 
@@ -17,6 +19,23 @@ heartbeats. From the knowledge learned from this model a more specialized model
 will be trained to classify between normal, murmur, extra heart sound and
 artifact heartbeats.
 
+The following folder structure has to be followed to have the same results and
+for the methods in the notebooks to work properly.
+
+data/
+
+    physionet/
+        reduced_features/
+        training-a/
+        training-b/
+        ...
+        training-f/
+
+    kaggle/
+        reduced_features/
+        set_a.csv
+        set_a/
+
 ---
 
 This project will consist of several notebooks
@@ -25,3 +44,18 @@ This project will consist of several notebooks
 
 * This notebook contains code to visualize audio files
 * Explores the Physionet and Kaggle datasets
+
+**WB2-FNN.ipynb**
+
+* This notebook implements a Feed Forward Network for the PhysioNet dataset
+
+**WB3-CNN.ipynb**
+
+* This notebook implements a Convolutional Neural Network for the PhysioNet
+  dataset
+
+**WB4-Transer Learning.ipynb**
+
+* This notebook implements the methods applied for feature extraction in WB2 and
+  WB3 and compares the results to model that uses transfer learning to be used
+  with the Kaggle dataset
